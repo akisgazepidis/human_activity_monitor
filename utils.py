@@ -115,9 +115,14 @@ class ActionAnalyzer:
             print(f"AI ANALYSIS FOR: {os.path.basename(video_path)}")
             print(analysis_result)
             print("-" * 30)
+            
+            # Create the 'actions' subfolder if it doesn't exist
+            actions_dir = os.path.join(OUTPUT_DIR, "actions")
+            os.makedirs(actions_dir, exist_ok=True)
 
-            # 5. SAVE the response to a .txt file next to the video
-            report_path = video_path.replace(".mp4", ".txt")
+            # 5. SAVE the response to a .txt file in the 'actions' subfolder
+            video_filename_no_ext = os.path.splitext(os.path.basename(video_path))[0]
+            report_path = os.path.join(actions_dir, f"{video_filename_no_ext}.txt")
             with open(report_path, "w", encoding="utf-8") as f:
                 f.write(analysis_result)
             print(f"💾 Report saved to: {report_path}")
