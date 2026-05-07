@@ -2,7 +2,7 @@
 
 A smart surveillance system that combines real-time computer vision with advanced Large Language Models (LLMs) to detect human presence and understand their actions.
 
-![Project Demo](recordings/demo.gif)
+![Project Demo](demo.gif)
 
 ## 🌟 Overview
 This project uses **YOLOv8** for high-speed local object detection to identify when a person enters the camera's field of view. When a person is detected, the system records a video clip. Once the person leaves, the clip is automatically sent to **Google Gemini (GenAI)** to analyze the specific actions (e.g., walking, falling, or suspicious behavior) and generates a written report.
