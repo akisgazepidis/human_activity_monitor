@@ -1,0 +1,14 @@
+# .gitignore 
+# Ignore node_modules
+
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.vscode/
+.env
+*.mp4
+
