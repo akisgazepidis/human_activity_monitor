@@ -11,7 +11,7 @@ This project uses **YOLOv8** for high-speed local object detection to identify w
 ## ✨ Features
 - **Real-time Human Detection**: Low-latency detection using YOLOv8.
 - **Automated Recording**: Captures video only when a person is present, including a configurable cooldown period.
-- **AI Action Analysis**: Leverages Gemini 1.5 Flash to provide human-like descriptions of captured activities.
+- **AI Action Analysis**: Leverages **Gemini 3.0 Flash** to provide human-like descriptions of captured activities.
 - **Asynchronous Processing**: Analysis happens in the background, ensuring the camera feed remains smooth and uninterrupted.
 - **Local Reports**: Automatically saves `.txt` analysis reports in a dedicated `actions/` directory.
 

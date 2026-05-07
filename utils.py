@@ -53,7 +53,7 @@ class HumanDetector:
                     # Stop recording if person is gone longer than COOLDOWN_SECONDS
                     if not person_found and (current_time - self.last_detection_time > COOLDOWN_SECONDS):
                         self.video_writer.release()
-                        print(f"✅ Video saved. Sending to Gemini 1.5 Flash...")
+                        print(f"✅ Video saved. Sending to {MODEL_NAME}...")
                         
                         # TRIGGER THE ANALYSIS
                         self.analyzer.analyze_async(self.current_video_path)
